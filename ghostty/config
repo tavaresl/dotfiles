@@ -39,9 +39,10 @@
 
 theme                   = gruvbox-material-medium-dark
 background-blur-radius  = 20
+background-opacity      = .9
 macos-option-as-alt     = true
 window-decoration       = true
 mouse-hide-while-typing = true
 font-size               = 14
 font-family             = JetBrains Mono
-keybind 				= cmd+r=prompt_surface_title
+keybind 		= cmd+r=prompt_surface_title
