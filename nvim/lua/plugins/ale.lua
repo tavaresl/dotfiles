@@ -1,7 +1,7 @@
 -- ale
 
 vim.g.ale_linters = {
-	cs = { "OmniSharp" },
+	-- cs = { "OmniSharp" }, -- Using roslyn.nvim instead
 	javascript = { "prettier", "eslint" },
 	javascriptreact = { "prettier", "eslint" },
 	typescript = { "prettier", "eslint" },
@@ -16,3 +16,4 @@ vim.g.ale_fixers = {
 }
 
 vim.g.ale_fix_on_save = 1
+vim.g.ale_completion_enabled = 0 -- Using coq_nvim for completion

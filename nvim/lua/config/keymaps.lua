@@ -4,39 +4,21 @@ end
 
 local map = vim.keymap.set
 
--- asyncomplete.vim
--- <Tab>: next item in popup if open, otherwise literal tab
+-- GitHub Copilot
+vim.g.copilot_no_tab_map = true
+-- Use vim.cmd for the mapping to ensure <script><expr> logic from copilot.vim works perfectly
+vim.cmd([[
+  imap <silent><script><expr> <M-Right> copilot#Accept("")
+  imap <silent><script><expr> <M-f>     copilot#Accept("")
+]])
+
+-- Standard Tab for completion
 map("i", "<Tab>", function()
-	if vim.fn.pumvisible() then
+	if vim.fn.pumvisible() ~= 0 then
 		return tab("<C-n>")
-	else
-		return tab("<Tab>")
 	end
-end, { expr = true, silent = true })
-
--- <S-Tab>: previous item in popup if open, otherwise literal Shift-Tab
-map("i", "<S-Tab>", function()
-	if vim.fn.pumvisible() then
-		return tab("<C-p>")
-	else
-		return tab("<S-Tab>")
-	end
-end, { expr = true, silent = true })
-
--- <CR>: close autocomplete popup if visible, otherwise insert new line sr
-map("i", "<cr>", function()
-	-- if vim.fn.pumvisible() then
-	-- 	vim.fn["asyncomplete#close_popup"]()
-	-- end
-
-	return tab("<cr>")
-end, { expr = true, silent = true })
-
--- Telescope
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { silent = true })
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>",  { silent = true })
-map("n", "<leader>fb", "<cmd>Telescope buffers<cr>",    { silent = true })
-map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>",  { silent = true })
+	return tab("<Tab>")
+end, { expr = true, silent = true, desc = "Next completion or Tab" })
 
 map("n", "<leader>pv", "<cmd>Ex<cr>", { silent = true })
 

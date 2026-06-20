@@ -4,10 +4,6 @@ vim.cmd [[
 	Plug 'mason-org/mason.nvim'
 	Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-dispatch'
-	Plug 'Shougo/vimproc.vim'
-	Plug 'luukvbaal/statuscol.nvim'
-	Plug 'Mofiqul/dracula.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'MunifTanjim/nui.nvim'
 	Plug 'nvim-neo-tree/neo-tree.nvim'
 	Plug 'nvim-lua/plenary.nvim'
@@ -16,7 +12,6 @@ vim.cmd [[
 	Plug 'nvim-tree/nvim-web-devicons'
 	Plug 'lewis6991/gitsigns.nvim'
 	Plug 'nvim-lualine/lualine.nvim'
-	Plug 'folke/zen-mode.nvim'
 	Plug 'willothy/moveline.nvim', { 'do': 'make' }
 	Plug 'ms-jpq/coq_nvim'
 	Plug 'ms-jpq/coq.artifacts'
