@@ -37,7 +37,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme                   = gruvbox-material-medium-dark
+theme                   = Gruvbox Dark Hard
 background-blur-radius  = 20
 background-opacity      = .9
 macos-option-as-alt     = true
