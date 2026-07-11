@@ -2,17 +2,14 @@ vim.cmd [[
 	call plug#begin()
 
 	Plug 'mason-org/mason.nvim'
-	Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-dispatch'
 	Plug 'MunifTanjim/nui.nvim'
 	Plug 'nvim-neo-tree/neo-tree.nvim'
-	Plug 'nvim-lua/plenary.nvim'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'pmizio/typescript-tools.nvim'
 	Plug 'nvim-tree/nvim-web-devicons'
 	Plug 'lewis6991/gitsigns.nvim'
 	Plug 'nvim-lualine/lualine.nvim'
-	Plug 'willothy/moveline.nvim', { 'do': 'make' }
 	Plug 'ms-jpq/coq_nvim'
 	Plug 'ms-jpq/coq.artifacts'
 	Plug 'jake-stewart/multicursor.nvim'
@@ -25,6 +22,7 @@ vim.cmd [[
 	Plug 'rcarriga/nvim-dap-ui'
 	Plug 'Cliffback/netcoredbg-macOS-arm64.nvim'
 	Plug 'ellisonleao/gruvbox.nvim'
+	Plug 'nvim-lua/plenary.nvim'
 
 	call plug#end()
 ]]
