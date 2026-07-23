@@ -30,7 +30,7 @@ map("n", "<leader>tb", "<cmd>Neotree toggle buffers right<cr>", { silent = true 
 -- LSP actions
 map("n",        "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>",      { silent = true, desc = "[r]ename [s]ymbol" }) -- (R)ename (W)ord [symbol]
 map({"n", "x"}, "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", { silent = true, desc = "[c]ode [a]ctions" }) -- Open diagnostics for whats below cursor
-map({"n", "x"}, "gh", "<cmd>lua vim.lsp.buf.hover()<cr>",       { silent = true, desc = "[h]over [s]ymbol" }) -- (H)over (W)ord [symbol]
+map({"n", "x"}, "gh", "<cmd>lua vim.lsp.buf.hover({ border = 'rounded' })<cr>",       { silent = true, desc = "[h]over [s]ymbol" }) -- (H)over (W)ord [symbol]
 
 -- Snacks
 map({"n", "x"}, "gd", function() Snacks.picker.lsp_definitions() end,       { silent = true, desc = "[g]oto [d]efinition"   })
