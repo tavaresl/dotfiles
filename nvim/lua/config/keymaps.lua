@@ -4,14 +4,6 @@ end
 
 local map = vim.keymap.set
 
--- GitHub Copilot
-vim.g.copilot_no_tab_map = true
--- Use vim.cmd for the mapping to ensure <script><expr> logic from copilot.vim works perfectly
-vim.cmd([[
-  imap <silent><script><expr> <M-Right> copilot#Accept("")
-  imap <silent><script><expr> <M-f>     copilot#Accept("")
-]])
-
 -- Standard Tab for completion
 map("i", "<Tab>", function()
 	if vim.fn.pumvisible() ~= 0 then

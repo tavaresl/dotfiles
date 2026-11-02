@@ -23,6 +23,7 @@ vim.cmd [[
 	Plug 'Cliffback/netcoredbg-macOS-arm64.nvim'
 	Plug 'ellisonleao/gruvbox.nvim'
 	Plug 'nvim-lua/plenary.nvim'
+	Plug 'stevearc/conform.nvim'
 
 	call plug#end()
 ]]
