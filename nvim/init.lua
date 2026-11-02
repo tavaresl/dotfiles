@@ -18,7 +18,7 @@ require("lsp.roslyn")
 require("lsp.ruby-lsp")
 
 -- per-plugin configs
-require('plugins.coq')
+require('plugins.cmp')
 require('plugins.lualine')
 require('plugins.neo-tree')
 require('plugins.nvim-treesitter')

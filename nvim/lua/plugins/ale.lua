@@ -16,4 +16,4 @@ vim.g.ale_fixers = {
 }
 
 vim.g.ale_fix_on_save = 1
-vim.g.ale_completion_enabled = 0 -- Using coq_nvim for completion
+vim.g.ale_completion_enabled = 0 -- Using nvim-cmp for completion

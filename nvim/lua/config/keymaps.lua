@@ -1,16 +1,4 @@
-local function tab(str)
-	return vim.api.nvim_replace_termcodes(str, true, true, true)
-end
-
 local map = vim.keymap.set
-
--- Standard Tab for completion
-map("i", "<Tab>", function()
-	if vim.fn.pumvisible() ~= 0 then
-		return tab("<C-n>")
-	end
-	return tab("<Tab>")
-end, { expr = true, silent = true, desc = "Next completion or Tab" })
 
 map("n", "<leader>pv", "<cmd>Ex<cr>", { silent = true })
 
